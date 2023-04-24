@@ -5,8 +5,8 @@ import 'package:test_traxporta/features/home/presentation/cubit/home_navigation_
 import 'package:test_traxporta/features/home/presentation/util/menu_option.dart';
 import 'package:test_traxporta/features/home/presentation/widgets/bottom_bar.dart';
 import 'package:test_traxporta/features/home/presentation/widgets/nav_bar.dart';
-import 'package:test_traxporta/features/profile/presentation/pages/bussines_name_form.dart';
 import 'package:test_traxporta/features/profile/presentation/pages/profile.dart';
+import 'package:test_traxporta/features/profile/presentation/pages/profile_form.dart';
 import 'package:test_traxporta/features/shipment/presentation/pages/shipment_detail.dart';
 
 class HomeScreenContent extends StatelessWidget {
@@ -15,7 +15,7 @@ class HomeScreenContent extends StatelessWidget {
   final HomeNavigationCubit homeNavigationCubit;
 
   final _screens = [
-    BussinesNameForm(),
+    ProfileForm(),
     const ProfileScreen(),
     const ShipmentDetail()
   ];
