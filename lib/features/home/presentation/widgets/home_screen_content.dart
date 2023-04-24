@@ -17,7 +17,7 @@ class HomeScreenContent extends StatelessWidget {
   final _screens = [
     ProfileForm(),
     const ProfileScreen(),
-    const ShipmentDetail()
+    //const ShipmentDetail()
   ];
   final _options = const [
     MenuOption(
@@ -28,10 +28,10 @@ class HomeScreenContent extends StatelessWidget {
       icon: Icons.webhook,
       label: '2',
     ),
-    MenuOption(
-      icon: Icons.satellite_alt_outlined,
-      label: '3',
-    ),
+    // MenuOption(
+    //   icon: Icons.satellite_alt_outlined,
+    //   label: '3',
+    // ),
   ];
 
   @override
