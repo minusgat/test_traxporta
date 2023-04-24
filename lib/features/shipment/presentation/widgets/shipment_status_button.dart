@@ -6,8 +6,11 @@ import 'package:test_traxporta/features/shipment/domain/entities/shipment_status
 class ShipmentStatusButton extends StatelessWidget {
   ShipmentStatusButton({super.key});
 
-  final shipmentStatusDetail =
-      ShipmentStatusDetail("Naucaloan de Juarez- Puebla", "En camino", "98765");
+  final shipmentStatusDetail = ShipmentStatusDetail(
+    "Naucalpan de Juarez- Puebla",
+    "En camino",
+    "ID: 98765",
+  );
 
   @override
   Widget build(BuildContext context) {
@@ -75,18 +78,21 @@ class _BodyContainer extends StatelessWidget {
         children: [
           Flexible(
             flex: 1,
-            child: Text(shipmentStatusDetail.adress),
+            child: Center(
+              child: Text(shipmentStatusDetail.adress),
+            ),
           ),
           Expanded(
               flex: 1,
               child: Align(
                 alignment: Alignment.centerRight,
-                child: Text(
-                  shipmentStatusDetail.status.toUpperCase(),
-                  style: Theme.of(context)
-                      .textTheme
-                      .titleMedium!
-                      .copyWith(color: Colors.yellow),
+                child: Center(
+                  child: Text(
+                    shipmentStatusDetail.status.toUpperCase(),
+                    style: Theme.of(context).textTheme.titleMedium!.copyWith(
+                          color: Colors.yellow,
+                        ),
+                  ),
                 ),
               )),
           Flexible(
