@@ -78,21 +78,21 @@ class _BodyContainer extends StatelessWidget {
         children: [
           Flexible(
             flex: 1,
-            child: Center(
-              child: Text(shipmentStatusDetail.adress),
+            child: Text(
+              shipmentStatusDetail.adress,
+              textAlign: TextAlign.center,
             ),
           ),
           Expanded(
               flex: 1,
               child: Align(
                 alignment: Alignment.centerRight,
-                child: Center(
-                  child: Text(
-                    shipmentStatusDetail.status.toUpperCase(),
-                    style: Theme.of(context).textTheme.titleMedium!.copyWith(
-                          color: Colors.yellow,
-                        ),
-                  ),
+                child: Text(
+                  shipmentStatusDetail.status.toUpperCase(),
+                  textAlign: TextAlign.center,
+                  style: Theme.of(context).textTheme.titleMedium!.copyWith(
+                        color: Colors.yellow,
+                      ),
                 ),
               )),
           Flexible(
