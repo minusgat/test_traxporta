@@ -7,7 +7,6 @@ import 'package:test_traxporta/features/home/presentation/widgets/bottom_bar.dar
 import 'package:test_traxporta/features/home/presentation/widgets/nav_bar.dart';
 import 'package:test_traxporta/features/profile/presentation/pages/profile.dart';
 import 'package:test_traxporta/features/profile/presentation/pages/profile_form.dart';
-import 'package:test_traxporta/features/shipment/presentation/pages/shipment_detail.dart';
 
 class HomeScreenContent extends StatelessWidget {
   HomeScreenContent({super.key, required this.homeNavigationCubit});
